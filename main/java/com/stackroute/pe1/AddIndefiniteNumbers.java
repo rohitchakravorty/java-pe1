@@ -1,5 +1,6 @@
 package com.stackroute.pe1;
 
+/*To add indefinite numbers of user input*/
 public class AddIndefiniteNumbers {
 
 

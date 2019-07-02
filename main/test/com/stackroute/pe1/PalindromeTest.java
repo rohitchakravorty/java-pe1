@@ -18,14 +18,7 @@ public class PalindromeTest {
         ob=null;
     }
 
-    /* @Test
-    public void givenNullStringShouldReturnMessage() {
-         Palindrome ob=new Palindrome();
-         //Act
-         String result=ob.checkPalindrome(null);
-         //Assert
-         assertEquals("Null not allowed",result);
-     }*/
+
     @Test
     public void givenIntegerIsPalindromeShouldReturnMessage() {
         //Act

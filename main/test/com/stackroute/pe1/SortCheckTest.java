@@ -33,6 +33,12 @@ public class SortCheckTest {
         //Assert
         assertEquals(10,result);
     }
+    @Test
+    public void givenNotIntegerShouldReturErrorMessage()
+    {
+        boolean result=ob.isNumeric("abcd");
+        assertEquals(false,result);
+    }
 
 
 }

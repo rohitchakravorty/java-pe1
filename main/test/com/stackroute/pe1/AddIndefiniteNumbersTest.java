@@ -19,10 +19,22 @@ public class AddIndefiniteNumbersTest {
     }
 
     @Test
-    public void addNum() {
+    public void givenIndefiniteInputShouldReturnResult() {
 
         String result = ob.addNum("12 23 2 4");
         assertEquals("41",result);
+    }
+    @Test
+    public void givenCharInputShouldReturnErrorMessage()
+    {
+        String result=ob.addNum("sasdasdnjansd");
+        assertEquals("Character found",result);
+    }
+    @Test
+    public void givenSpecialCharInputShouldReturnErrorMessage()
+    {
+        String result=ob.addNum("%@");
+        assertEquals("Special Character",result);
     }
 
 }

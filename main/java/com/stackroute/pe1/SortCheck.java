@@ -3,19 +3,21 @@ package com.stackroute.pe1;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*Sort the integer input in non-decreasing order and add sum of even digits*/
+
 public class SortCheck {
-    public static void main(String[] args) {
-        int inputNum;
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter a number: ");
-        inputNum = sc.nextInt();
-
-        sortInput(inputNum);
-        evenSum(inputNum);
+    public static boolean isNumeric(String strNum)    //To validate the input
+    {
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException | NullPointerException nfe) {
+            return false;
+        }
+        return true;
     }
 
-    public static String sortInput(int input) {
+    public static String sortInput(int input)          //To sort the given integer input
+    {
         String sortedNumber = "";
 
         String str = Integer.toString(input);
@@ -33,7 +35,8 @@ public class SortCheck {
         return sortedNumber;
     }
 
-    public static int evenSum(int input) {
+    public static int evenSum(int input)                //To add the even digits
+    {
         int sum = 0;
         String str = Integer.toString(input);
         char temp[] = str.toCharArray();

@@ -2,20 +2,13 @@ package com.stackroute.pe1;
 
 import java.lang.String;
 import java.util.Scanner;
+/*To check vowel and consonent*/
 public class VowelCheck {
-    public static void main(String[] args)
-    {
-        String word;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter a string");
-        word=sc.nextLine();
-        checkVowel(word);
 
-    }
     public static String checkVowel(String word)
     {
         int len=word.length(),i=0;
-        word=word.toLowerCase();
+        word=word.toLowerCase(); //Converting the string to lowercase.
         while(i<len)
         {
             char check=word.charAt(i);

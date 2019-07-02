@@ -24,5 +24,12 @@ public class LoopTest {
         //Assert
         assertEquals(" 1 2 2", result);
     }
+    @Test
+    public void givenNotIntegerShouldReturErrorMessage()
+    {
+        boolean result=ob.isNumeric("abcd");
+        assertEquals(false,result);
+    }
+
 
 }

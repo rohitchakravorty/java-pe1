@@ -1,19 +1,9 @@
 package com.stackroute.pe1;
+/*To check if it is palindrome and find the sum of even digits*/
 
-import java.util.Scanner;
 public class Palindrome {
-
-    public static void main(String[] args) {
-        int num;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number");
-        num = sc.nextInt();
-        checkPalindrome(num);
-    }
-
-
-
-     public static String checkPalindrome(int num) {
+    public static String checkPalindrome(int num) //To check the palindrome
+    {
          int originalNum = num;
          int reverseNum = 0;
          int rem;
@@ -32,7 +22,7 @@ public class Palindrome {
             return "is not palindrome";
          }
      }
-     public static String evenSum(int num)
+     public static String evenSum(int num)    //To add the sum of even digits
      {
             int rem,sum=0;
              while(num!=0)

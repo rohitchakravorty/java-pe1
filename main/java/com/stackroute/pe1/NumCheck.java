@@ -1,16 +1,18 @@
 package com.stackroute.pe1;
 
-import java.util.Scanner;
+/*To print given statements according to the condition*/
 public class NumCheck {
-    public static void main(String[] args)
+
+    public static boolean isNumeric(String strNum)    //To validate the input
     {
-        int num;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter a number:");
-        num=sc.nextInt();
-        numCheck(num);
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException | NullPointerException nfe) {
+            return false;
+        }
+        return true;
     }
-    public static String numCheck(int num)
+    public static String numCheck(int num)  //Check number
     {
         if(num>20 && num<30)
         {

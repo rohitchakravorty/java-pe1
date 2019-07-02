@@ -41,5 +41,12 @@ public class NumCheckTest {
         //Assert
         assertEquals("Invalid Input",result);
     }
+    @Test
+    public void givenNotIntegerShouldReturErrorMessage()
+    {
+        boolean result=ob.isNumeric("abcd");
+        assertEquals(false,result);
+    }
+
 
 }

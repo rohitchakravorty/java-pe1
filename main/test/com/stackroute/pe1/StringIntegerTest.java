@@ -24,5 +24,12 @@ public class StringIntegerTest {
         //Assert
         assertEquals("hellololo", result);
     }
+    @Test
+    public void givenNullShouldReturnErrorMessage() {
+        //Act
+        String result = ob.repeatString(null,2);
+        //Assert
+        assertEquals("Null not accepted", result);
+    }
 
 }
